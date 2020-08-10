@@ -48,3 +48,202 @@ li{
   color: black;
  
 }
+
+/* /* facebook icon in navbar on 'main'  */
+
+
+li:hover
+{
+    background-color: #990000;
+}
+
+a
+{         
+    color: blue;
+    padding: 35px 32px 7px;
+    display: block;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: red;
+}
+
+.facebook
+{
+    background-image: url('http://www.sizzledcore.com/wp-content/themes/SizzledCore-7.0/images/facebook.png');
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+}
+
+
+/* Main Css */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Main-Top Main-Top Main-Top Main-Top Main-Top" "Main-Sidebar red-img red-img red-img ." "Main-Sidebar Mus-Art Mus-Art Mus-Art .";
+}
+
+.Main-Top {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "Nav-bar1" "main-img";
+  grid-area: Main-Top;
+}
+
+.Nav-bar1 { grid-area: Nav-bar1; }
+
+.main-img { 
+  grid-area: main-img;
+background-image: url(./Components/clover.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+}
+/* "Spotlight" Title*/
+.spotlight{
+ color: white;
+}
+
+
+/* "Why" title */
+.mainTitle{
+  color: rgb(224, 175, 61);
+  font-size: 80px;
+  font-weight:200;
+  text-align: center;
+}
+
+
+
+/* Read Now button */
+.mainRead{
+  border: 5px solid black;
+  background-color: white;
+    text-align: center;
+  width: 150px;
+  height: 50px;
+
+}
+/* Catalyst Sidebar Menu */
+.Main-Sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  /* gap: 0px 0px; */
+  grid-template-areas: "Cata1" "ch1" "ch2" "ch3" "ch4";
+  grid-area: Main-Sidebar;
+  background-color: rgb(231, 231, 231);
+}
+h6{
+  text-transform:capitalize; 
+}
+
+.Cata1 { grid-area: Cata1; 
+
+}
+
+.ch1 { grid-area: ch1;
+background-color: white;
+border-left:4px solid yellow;
+}
+
+.ch2 { grid-area: ch2; }
+
+.ch3 { grid-area: ch3; }
+
+.ch4 { grid-area: ch4; }
+
+.red-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Artificial-Int . ." ". . .";
+  grid-area: red-img;
+  background-image: url(./Components/ai.png);
+  background-repeat: no-repeat;
+}
+/* Artificial Intelligence Title */
+.Artificial-Int { grid-area: Artificial-Int; 
+/* background-color: white; */
+border: solid white;
+color: white;
+}
+
+.Mus-Art {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr 0.9fr 1.1fr;
+  grid-template-rows: 0.9fr 1.1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Mus Mus Art Art" "Mus Mus Art Art";
+  grid-area: Mus-Art;
+}
+
+.Mus {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: 0.9fr 1.1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". ." ". .";
+  grid-area: Mus;
+  background-image: url(./Components/art.png);
+  background-repeat: no-repeat;
+ 
+}
+
+.Art {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.9fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "KB ." ". .";
+  grid-area: Art;
+  background-image: url(./Components/music.png);
+  background-repeat: no-repeat;
+  
+}
+
+.KB { grid-area: KB; }
+
+
+
+/* CHANNELS */
+.channels{
+  text-align: center;
+}
+.grid-channels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Channel-title Channel-title Channel-title" "Biology-Beyond Women-Science Quanta-Abs" "Earth Think- Cosmos" "Poetry Aging Philanthropy" "MPNeuro . .";
+}
+
+.Biology-Beyond { grid-area: Biology-Beyond;
+text-transform: capitalize;
+}
+
+.Women-Science { grid-area: Women-Science; }
+
+.Quanta-Abs { grid-area: Quanta-Abs; }
+
+.Earth { grid-area: Earth; }
+
+.Think- { grid-area: Think-; }
+
+.Cosmos { grid-area: Cosmos; }
+
+.Poetry { grid-area: Poetry; }
+
+.Aging { grid-area: Aging; }
+
+.Philanthropy { grid-area: Philanthropy; }
+
+.MPNeuro { grid-area: MPNeuro; }
+
+.Channel-title { grid-area: Channel-title; }
