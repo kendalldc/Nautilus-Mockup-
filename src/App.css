@@ -255,3 +255,72 @@ text-transform: capitalize;
 .MPNeuro { grid-area: MPNeuro; }
 
 .Channel-title { grid-area: Channel-title; }
+
+/* POPULAR */
+
+.title-popular{
+  text-align: center;
+}
+/* most read subtitle box */
+.mostRead{
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+}
+
+/* most shared subtitle box */
+.mostShared{
+  color: black;
+  border: 1px solid black;
+}
+
+.grid-popular {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Does Does Smaller Smaller" "What-Time New-Veiw Text-me when-bad" ". . . .";
+}
+
+.Does { grid-area: Does; }
+
+.Smaller { grid-area: Smaller; }
+
+.What-Time { grid-area: What-Time; }
+
+.New-Veiw { grid-area: New-Veiw; }
+
+.Text-me { grid-area: Text-me; }
+
+.when-bad { grid-area: when-bad; }
+
+/* FACTS  */
+.facts{
+
+}
+
+.title-facts{
+  text-align: center;
+  
+}
+
+.popPhoto{
+  border-radius: 50%;
+ width: 80px;
+ height: 80px;
+}
+.grid-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Ideas Biology Matter Bio1" ". . . ." ". . . .";
+}
+
+.Ideas { grid-area: Ideas; }
+
+.Biology { grid-area: Biology; }
+
+.Matter { grid-area: Matter; }
+
+.Bio1 { grid-area: Bio1; }
