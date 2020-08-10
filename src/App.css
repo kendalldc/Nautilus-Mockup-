@@ -133,7 +133,7 @@ background-size:cover;
 .Main-Sidebar {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
   /* gap: 0px 0px; */
   grid-template-areas: "Cata1" "ch1" "ch2" "ch3" "ch4";
   grid-area: Main-Sidebar;
@@ -158,21 +158,22 @@ border-left:4px solid yellow;
 
 .ch4 { grid-area: ch4; }
 
+/* AI PNG */
 .red-img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.9fr 1fr 1fr 1.5fr;
   gap: 1px 1px;
-  grid-template-areas: "Artificial-Int . ." ". . .";
+  grid-template-areas: "Artificial-Int . . ." ". . . .";
   grid-area: red-img;
   background-image: url(./Components/ai.png);
   background-repeat: no-repeat;
 }
-/* Artificial Intelligence Title */
+
+/* Artificial Intelligence Title Box */
 .Artificial-Int { grid-area: Artificial-Int; 
-/* background-color: white; */
+background-color: white;
 border: solid white;
-color: white;
 }
 
 .Mus-Art {
@@ -187,28 +188,35 @@ color: white;
 .Mus {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  grid-template-rows: 0.9fr 1.1fr;
+  grid-template-rows: 0.9fr 1fr 1fr 1.5fr;
   gap: 1px 1px;
-  grid-template-areas: ". ." ". .";
+  grid-template-areas: "JP . . ."  ". . . .";
   grid-area: Mus;
-  background-image: url(./Components/art.png);
+  background-image: url(./Components/music.png);
   background-repeat: no-repeat;
- 
+}
+/* JP title box */
+.JP { grid-area: JP; 
+border: 4px solid blue ;
+background-color: whitesmoke;
 }
 
 .Art {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.9fr 1fr;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 0.9fr 1fr 1fr 1.5fr;
   gap: 1px 1px;
-  grid-template-areas: "KB ." ". .";
+  grid-template-areas: ". KB . ."  ". . . .";
   grid-area: Art;
-  background-image: url(./Components/music.png);
+  background-image: url(./Components/art.png);
   background-repeat: no-repeat;
   
 }
-
-.KB { grid-area: KB; }
+/* KB */
+.KB { grid-area: KB; 
+border: 4px solid blue ;
+background-color: whitesmoke;
+}
 
 
 
